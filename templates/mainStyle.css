@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  background-color: #404952;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2,
+h6,
+span {
+  transform: skewX(20deg);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.container > h1 {
+  color: white;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1rem 4rem 1rem rgba(0, 0, 0, 0.35);
+  margin-top: 3em;
+  background-color: black;
+  transform: skewX(-20deg);
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card_image {
+  padding: 0px 16px;
+  color: white;
+  margin: auto;
+  transform: skewX(20deg);
+}
+
+.card_title_box {
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.card_title_box > h2 {
+  font-weight: 500;
+}
+
+.card_detail_color {
+  padding: 0px 20px;
+  color: white;
+}
+
+.card_detail_quantity {
+  border-right: 1px black solid;
+  border-left: 1px black solid;
+  padding: 2px 20px;
+  color: white;
+  border-right: 2px #2c3236 solid;
+  border-left: 2px #2c3236 solid;
+}
+
+.card_detail_price {
+  padding: 0px 20px;
+  color: white;
+}
+
+.card_link {
+  flex: 0 0 auto;
+  background: linear-gradient(to bottom, #3e63f8, #3d57f8);
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  transform: skewX(-20deg) scale(1.08);
+  box-shadow: 0 1rem 5rem 0rem rgba(0, 0, 0, 0.5);
+}

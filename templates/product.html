@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{PRODUCTNAME} {IMAGE}</title>
+    <link rel="stylesheet" href="productStyle.css" />
+  </head>
+  <body>
+    <h1>This is Product page</h1>
+    <div class="container">
+      <h1>Nike Best Shoes</h1>
+      <figure class="product">
+        <a href="#" class="page_back">
+          <span class="emoji-left">Back</span>
+        </a>
+        <div class="product_hero">
+          <span class="product_image product_image_1">{IMAGE}</span>
+        </div>
+        <h2 class="product_name">{PRODUCTNAME}</h2>
+        <div class="product_details">
+          <p><span class="emoji-left">🖌️</span>{COLOR}</p>
+          <p><span class="emoji-left">📦</span>{QUANTITY}</p>
+          <p><span class="emoji-left">💰</span>{PRICE}</p>
+        </div>
+
+        <a href="#" class="product_link">
+          <span class="emoji-left">🛒</span>
+          <span>Add to Shopping Cart</span>
+        </a>
+
+        <p class="product_description">{DESCRIPTION}</p>
+      </figure>
+    </div>
+  </body>
+</html>
