@@ -6,6 +6,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main Page</title>
     <link rel="stylesheet" href="mainStyle.css" />
+    <style>
+      body {
+        margin: 0;
+        background-color: #404952;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      h6 {
+        margin: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+      }
+
+      .container > h1 {
+        color: white;
+        font-size: 48px;
+        margin-bottom: 40px;
+      }
+
+      .card {
+        display: flex;
+        align-items: center;
+        box-shadow: 0 1rem 4rem 1rem rgba(0, 0, 0, 0.35);
+        margin-top: 3em;
+        background-color: black;
+        transition: all 0.2s ease;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .card_image {
+        margin: 0px;
+        height: 68px;
+        width: 250px;
+        overflow: hidden;
+        position: relative;
+        background-color: #f6f6f6;
+      }
+
+      .card_image > img {
+        position: absolute;
+        height: 460px;
+        top: -230px;
+        bottom: 0;
+        left: -48px;
+      }
+
+      .card_title_box {
+        background: linear-gradient(to bottom, #3e63f8, #3d57f8);
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 3rem;
+        min-width: 350px;
+      }
+
+      .card_title {
+        color: white;
+      }
+
+      .card_detail {
+        display: flex;
+      }
+
+      .card_detail_box {
+        align-self: stretch;
+        border-right: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        color: white;
+      }
+
+      .card_link {
+        flex: 0 0 auto;
+        background: linear-gradient(to bottom, #3e63f8, #3d57f8);
+        color: white;
+        font-size: 1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+      }
+
+      span {
+        display: flex;
+      }
+
+      .card_detail_color,
+      .card_detail_star,
+      .card_detail_price {
+        padding: 1.75rem;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+    </style>
   </head>
   <body>
     <div class="container">

@@ -33,6 +33,26 @@ const url = require("url");
 // SERVER
 
 //  top level sync function to read json file 100%
+const replaceTemplate = (temp, product) => {
+  let output = temp.replace(/{PRODUCTNAME}/g, product.productName);
+  output = output.replace(/{IMAGE}/g, product.image);
+  output = output.replace(/{COLOR}/g, product.colors);
+  output = output.replace(/{STAR}/g, product.stars);
+  output = output.replace(/{PRICE}/g, product.price);
+  output = output.replace(/{DESCRIPTION}/g, product.description);
+  output = output.replace(/{ID}/g, product.id);
+
+  return output;
+};
+const tempMain = fs.readFileSync(`${__dirname}/templates/main.html`, "utf8");
+const tempProduct = fs.readFileSync(
+  `${__dirname}/templates/product.html`,
+  "utf8"
+);
+const tempCard = fs.readFileSync(
+  `${__dirname}/templates/template-card.html`,
+  "utf8"
+);
 const data = fs.readFileSync(`${__dirname}/data-set/data.json`, "utf8");
 const dataObj = JSON.parse(data);
 
@@ -40,13 +60,26 @@ const dataObj = JSON.parse(data);
 const server = http.createServer((req, res) => {
   const pathName = req.url;
 
-  if (pathName === "/" || pathName === "/overview") {
-    res.end("this is overview!");
+  // overview page
+  if (pathName === "/" || pathName === "/main") {
+    res.writeHead(200, { "Content-type": "text/html" });
+    const cardsHtml = dataObj
+      .map((el) => replaceTemplate(tempCard, el))
+      .join("");
+    const output = tempMain.replace("{PRODUCT_CARDS}", cardsHtml);
+
+    res.end(output);
+
+    // product page
   } else if (pathName === "/product") {
     res.end("this is product!");
+
+    // api call
   } else if (pathName === "/api") {
     res.writeHead(200, { "Content-type": "application/json" });
     res.end(data);
+
+    // error callback
   } else {
     res.writeHead(404, {
       "Content-type": "text/html",

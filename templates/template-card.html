@@ -1,21 +1,19 @@
 <figure class="card">
-  <div class="card_image">{IMAGE}</div>
+  <div class="card_image">
+    <img src="{IMAGE}" alt="" />
+  </div>
   <div class="card_title_box">
     <h2 class="card_title">{PRODUCTNAME}</h2>
   </div>
   <div class="card_detail">
-    <div class="card_detail_color">
-      <h6>{COLOR}</h6>
+    <div class="card_detail_box">
+      <h6 class="card_detail_color">{COLOR}</h6>
     </div>
-  </div>
-  <div class="card_detail">
-    <div class="card_detail_quantity">
-      <h6>{QUANTITY}</h6>
+    <div class="card_detail_box">
+      <h6 class="card_detail_star">{STAR}</h6>
     </div>
-  </div>
-  <div class="card_detail">
-    <div class="card_detail_price">
-      <h6>{PRICE}</h6>
+    <div class="card_detail_box">
+      <h6 class="card_detail_price">{PRICE}</h6>
     </div>
   </div>
   <a class="card_link" href="/product?id={ID}">

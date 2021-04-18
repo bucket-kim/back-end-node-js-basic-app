@@ -2,55 +2,55 @@
   {
     "id": 0,
     "productName": "Nike Air Force 1 '07",
-    "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4f37fca8-6bce-43e7-ad07-f57ae3c13142/air-force-1-07-mens-shoe-5QFp5Z.png",
-    "colors": "White",
+    "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/350e7f3a-979a-402b-9396-a8a998dd76ab/air-force-1-07-mens-shoe-xDpsTk.png",
+    "colors": "2 colors",
     "price": "$90",
-    "quantity": 5,
+    "stars": "4.9 Stars",
     "description": "The radiance lives on in the Nike Air Force 1 ’07, the b-ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine."
   },
   {
     "id": 1,
-    "productName": "Nike React Infinity Run Flyknit 2",
+    "productName": "Nike Free Metcon 3",
     "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/574825ee-3582-4cd1-9ef9-fee8e5019c58/free-metcon-3-mens-training-shoe-HT6hdN.png",
-    "colors": "Blackened Blue/Ashen Slate/White/Ashen Slate",
+    "colors": "6 colors",
     "price": "$120",
-    "quantity": 5,
+    "stars": "4.7 Stars",
     "description": "The Nike Free Metcon 3 combines Nike Free flexibility around the forefoot with Metcon stability in the heel to help you get the most out of your training session."
   },
   {
     "id": 2,
     "productName": "Nike Air VaporMax Flyknit 3",
     "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/wxe4gb7zjiey9eejirq0/air-vapormax-flyknit-3-mens-shoe-JsWsB7.jpg",
-    "colors": "White/Pure Platinum/Metallic Silver/White",
+    "colors": "1 color",
     "price": "$200",
-    "quantity": 5,
+    "stars": "4.7 Stars",
     "description": "Be bouncy and buoyant in the Nike Air VaporMax Flyknit 3. The upper features flowing, 2-tone lines of breathable, stretchable Flyknit construction for unique, street-ready style. Revolutionary VaporMax technology keeps spring in your step with toe-to-heel cushioning."
   },
   {
     "id": 3,
     "productName": "Nike Blazer Mid '77 Vintage",
     "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/fb7eda3c-5ac8-4d05-a18f-1c2c5e82e36e/blazer-mid-77-vintage-mens-shoe-nw30B2.png",
-    "colors": "White/Black",
+    "colors": "6 colors",
     "price": "$100",
-    "quantity": 5,
+    "stars": "4.6 Stars",
     "description": "In the ‘70s, Nike was the new shoe on the block. So new in fact, we were still breaking into the basketball scene and testing prototypes on the feet of our local team. Of course, the design improved over the years, but the name stuck. The Nike Blazer Mid ’77 Vintage—classic since the beginning."
   },
   {
     "id": 4,
     "productName": "Nike Air VaporMax Evo",
     "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/6daed5a8-b6b8-4792-aac2-7e4b2ec145bd/air-vapormax-evo-mens-shoe-WhLBpv.png",
-    "colors": "Black/Black/Black",
+    "colors": "1 color",
     "price": "$200",
-    "quantity": 5,
+    "stars": "5 Stars",
     "description": "The Nike Air VaporMax EVO puts Air Max DNA under the microscope to showcase the distinguishing features of 7 Nike icons. From stitched overlays, to classic accents to unbelievable comfort and overt '90s styling, it splices the must-haves of your favorite Air Max shoes onto 1 new design. Evolve your look and feel the comfort of everything Max."
   },
   {
     "id": 5,
     "productName": "Nike Pegasus Trail 2 GORE-TEX",
     "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/d6539dd8-51cd-4b0d-8db0-5f2cfce5e4d0/pegasus-trail-2-gore-tex-mens-trail-running-shoe-0vmbg9.png",
-    "colors": "Mystic Dates/Astronomy Blue/Black/Laser Orange",
+    "colors": "3 colors",
     "price": "$145",
-    "quantity": 5,
+    "stars": "4.5 Stars",
     "description": "Keep moving in wet conditions. The Nike Pegasus Trail 2 GORE-TEX provides waterproof protection for runners, trail athletes and outdoor enthusiasts. Versatile enough for everyday training, it features an ideal fit and optimal traction for your miles."
   }
 ]
