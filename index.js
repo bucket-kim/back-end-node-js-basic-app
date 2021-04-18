@@ -58,10 +58,10 @@ const dataObj = JSON.parse(data);
 
 // call back function once sync function is fine
 const server = http.createServer((req, res) => {
-  const pathName = req.url;
+  const { query, pathname } = url.parse(req.url, true);
 
   // overview page
-  if (pathName === "/" || pathName === "/main") {
+  if (pathname === "/" || pathname === "/main") {
     res.writeHead(200, { "Content-type": "text/html" });
     const cardsHtml = dataObj
       .map((el) => replaceTemplate(tempCard, el))
@@ -71,11 +71,15 @@ const server = http.createServer((req, res) => {
     res.end(output);
 
     // product page
-  } else if (pathName === "/product") {
-    res.end("this is product!");
+  } else if (pathname === "/product") {
+    res.writeHead(200, { "content-type": "text/html" });
+    const product = dataObj[query.id];
+    const output = replaceTemplate(tempProduct, product);
+
+    res.end(output);
 
     // api call
-  } else if (pathName === "/api") {
+  } else if (pathname === "/api") {
     res.writeHead(200, { "Content-type": "application/json" });
     res.end(data);
 
