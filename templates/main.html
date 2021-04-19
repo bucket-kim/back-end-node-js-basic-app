@@ -16,6 +16,18 @@
         min-height: 100vh;
       }
 
+      body::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-image: url("https://wallpapercave.com/wp/GKvACmq.jpg");
+        opacity: 0.2;
+        z-index: -1;
+      }
+
       h1 {
         margin: 0;
       }
@@ -33,7 +45,7 @@
 
       .container > h1 {
         color: white;
-        font-size: 48px;
+        font-size: 60px;
         margin-bottom: 40px;
       }
 

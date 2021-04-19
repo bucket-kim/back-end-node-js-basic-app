@@ -16,12 +16,24 @@
         min-height: 100vh;
       }
 
+      body::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-image: url("https://wallpapercave.com/wp/GKvACmq.jpg");
+        opacity: 0.2;
+        z-index: -1;
+      }
+
       h1 {
         margin: 0;
         color: white;
         text-align: center;
         position: relative;
-        font-size: 48px;
+        font-size: 60px;
       }
 
       .container {
@@ -61,7 +73,7 @@
         left: 0;
         background-image: linear-gradient(to left bottom, #bbe0ff, #8ecafc);
         opacity: 0.2;
-        z-index: 100;
+        z-index: -1;
       }
 
       .product_hero > img {
