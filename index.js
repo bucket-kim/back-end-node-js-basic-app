@@ -1,7 +1,7 @@
 const fs = require("fs");
-
 const http = require("http");
 const url = require("url");
+const replaceTemplate = require("./module/replaceTemp");
 
 // ----------------------------------------
 // FILES
@@ -33,17 +33,7 @@ const url = require("url");
 // SERVER
 
 //  top level sync function to read json file 100%
-const replaceTemplate = (temp, product) => {
-  let output = temp.replace(/{PRODUCTNAME}/g, product.productName);
-  output = output.replace(/{IMAGE}/g, product.image);
-  output = output.replace(/{COLOR}/g, product.colors);
-  output = output.replace(/{STAR}/g, product.stars);
-  output = output.replace(/{PRICE}/g, product.price);
-  output = output.replace(/{DESCRIPTION}/g, product.description);
-  output = output.replace(/{ID}/g, product.id);
 
-  return output;
-};
 const tempMain = fs.readFileSync(`${__dirname}/templates/main.html`, "utf8");
 const tempProduct = fs.readFileSync(
   `${__dirname}/templates/product.html`,
