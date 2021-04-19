@@ -1,0 +1,23 @@
+{
+  "name": "back-end-node-js-basic-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bucket-kim/back-end-node-js-basic-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bucket-kim/back-end-node-js-basic-app/issues"
+  },
+  "homepage": "https://github.com/bucket-kim/back-end-node-js-basic-app#readme",
+  "dependencies": {
+    "slugify": "^1.5.0"
+  }
+}

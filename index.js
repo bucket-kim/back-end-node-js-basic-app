@@ -2,6 +2,7 @@ const fs = require("fs");
 const http = require("http");
 const url = require("url");
 const replaceTemplate = require("./module/replaceTemp");
+const slugify = require("slugify");
 
 // ----------------------------------------
 // FILES
@@ -45,6 +46,10 @@ const tempCard = fs.readFileSync(
 );
 const data = fs.readFileSync(`${__dirname}/data-set/data.json`, "utf8");
 const dataObj = JSON.parse(data);
+
+const slugs = dataObj.map((el) => slugify(el.productName, { lower: true }));
+
+console.log(slugs);
 
 // call back function once sync function is fine
 const server = http.createServer((req, res) => {
