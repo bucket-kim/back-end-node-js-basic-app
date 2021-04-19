@@ -47,10 +47,6 @@ const tempCard = fs.readFileSync(
 const data = fs.readFileSync(`${__dirname}/data-set/data.json`, "utf8");
 const dataObj = JSON.parse(data);
 
-const slugs = dataObj.map((el) => slugify(el.productName, { lower: true }));
-
-console.log(slugs);
-
 // call back function once sync function is fine
 const server = http.createServer((req, res) => {
   const { query, pathname } = url.parse(req.url, true);
